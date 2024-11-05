@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Pro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="glass-card">
+            <h1><i class="fas fa-bolt"></i> Weather Pro</h1>
+            
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="locationInput" placeholder="Enter city name">
+                </div>
+                <button onclick="searchWeather()" class="search-btn">Search</button>
+                <button onclick="getLocation()" class="location-btn">
+                    <i class="fas fa-location-dot"></i>
+                </button>
+            </div>
+
+            <div class="weather-container" id="weatherInfo">
+                <h2 id="location">--</h2>
+                <div class="weather-info">
+                    <div class="main-info">
+                        <img id="weatherIcon" src="" alt="Weather icon">
+                        <div class="temperature">
+                            <span id="temp">--</span>
+                            <span class="degree">°C</span>
+                        </div>
+                    </div>
+                    <div id="description" class="description">--</div>
+                    <div class="details">
+                        <div class="detail-item">
+                            <i class="fas fa-droplet"></i>
+                            <span>Humidity</span>
+                            <span id="humidity">--</span>%
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-wind"></i>
+                            <span>Wind Speed</span>
+                            <span id="windSpeed">--</span> km/h
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
